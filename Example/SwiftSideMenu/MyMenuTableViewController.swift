@@ -54,8 +54,8 @@ class MyMenuTableViewController: UITableViewController {
             cell!.selectedBackgroundView = selectedBackgroundView
         }
         
-        cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
-        
+        cell!.textLabel?.text = "View #\(indexPath.row+1)"
+        cell!.imageView?.image = UIImage(named: "\(indexPath.row)")
         return cell!
     }
     
